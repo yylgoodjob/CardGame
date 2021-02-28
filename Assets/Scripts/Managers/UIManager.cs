@@ -10,6 +10,8 @@ public class UIManager : MonoBehaviour
         //注册事件
         EventCenter.AddListener<int>(EventType.CLICKJUMPSCENE, ClickJumpScene);
         EventCenter.AddListener(EventType.CLICKEXIT, ClickExit);
+        EventCenter.AddListener<GameObject>(EventType.SHOWGAMEOBJECT, ShowGameObject);
+        EventCenter.AddListener<GameObject>(EventType.HIDEGAMEOBJECT, HideGameObject);
     }
 
     private void OnDisable()
@@ -17,7 +19,27 @@ public class UIManager : MonoBehaviour
         //销毁事件
         EventCenter.RemoveListener<int>(EventType.CLICKJUMPSCENE, ClickJumpScene);
         EventCenter.RemoveListener(EventType.CLICKEXIT, ClickExit);
+        EventCenter.RemoveListener<GameObject>(EventType.SHOWGAMEOBJECT, ShowGameObject);
+        EventCenter.RemoveListener<GameObject>(EventType.HIDEGAMEOBJECT, HideGameObject);
     }
+    /// <summary>
+    /// 显示物体
+    /// </summary>
+    /// <param name="go">要显示的物体</param>
+    private void ShowGameObject(GameObject go)
+    {
+        go.SetActive(true);
+    }
+
+    /// <summary>
+    /// 隐藏物体
+    /// </summary>
+    /// <param name="go">要隐藏的物体</param>
+    private void HideGameObject(GameObject go)
+    {
+        go.SetActive(false);
+    }
+
     /// <summary>
     /// 跳转场景
     /// </summary>
