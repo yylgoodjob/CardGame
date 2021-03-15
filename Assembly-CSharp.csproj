@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\EventCenter\CallBack.cs" />
     <Compile Include="Assets\Scripts\EventCenter\EventCenter.cs" />
     <Compile Include="Assets\Scripts\EventCenter\EventType.cs" />
+    <Compile Include="Assets\Scripts\MainPanel\MainCanvas.cs" />
     <Compile Include="Assets\Scripts\Managers\AnimManager.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\Managers\UIManager.cs" />

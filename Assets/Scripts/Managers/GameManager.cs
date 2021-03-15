@@ -4,12 +4,16 @@ using UnityEngine;
 
 //管理游戏中的各种属性
 
-public class GameManager : MonoBehaviour
+namespace CardGame
 {
-    private UIManager uiManager;
 
-    private void Start()
+    public class GameManager : MonoBehaviour
     {
-        uiManager = new UIManager();
+        private UIManager uiManager;
+
+        private void Start()
+        {
+            uiManager = new UIManager();
+        }
     }
 }
