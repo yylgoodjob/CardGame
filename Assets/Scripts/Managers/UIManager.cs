@@ -59,10 +59,22 @@ namespace CardGame
             Application.Quit();
         }
 
+        //对外开放的方法
+        /// <summary>
+        /// 开始游戏（切换场景1）
+        /// </summary>
         public void ClickStartGame()
         {
             //场景一为进入游戏是的界面，后续可以更改TODO
             ClickJumpScene(1);
+        }
+
+        /// <summary>
+        /// 退出游戏
+        /// </summary>
+        public void ClickExitGame()
+        {
+            Application.Quit();
         }
     }
 }

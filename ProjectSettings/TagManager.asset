@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Btn_StartGame
+  - Btn_ExitGame
+  - BackGround
   layers:
   - Default
   - TransparentFX

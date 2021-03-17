@@ -69,6 +69,9 @@
     <Compile Include="Assets\Scripts\Managers\AnimManager.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\Managers\UIManager.cs" />
+    <Compile Include="Assets\Scripts\Player\CreatePlayer.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerType.cs" />
+    <Compile Include="Assets\Scripts\SceneOnePanel\SceneOneCanvas.cs" />
     <Reference Include="UnityEngine">
       <HintPath>E:/u3_/unity/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
